@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="customAlert" class="custom-alert">
+        <div class="custom-alert-content">
+            <span id="closeAlert" class="close-alert">&times;</span>
+            <p id="alertMessage">Alert message here</p>
+            <button id="alertOkButton">Continue</button>
+        </div>
+    </div>
+
+    <p id="selectionStatus" class="status-box">No server type selected</p>
+
+    <div class="container">
+        <h1>Blade Ball Rap Based Server Joiner</h1>
+        <h2>Author: bchxfangirlxd234</h2>
+        <h3>Game ID: 13772394625</h3>
+        <h4>Roblox Username:</h4>
+        <textarea id="message" placeholder="Enter Your Roblox Username"></textarea>
+        <button id="send">Accept</button>
+
+        
+
+        <!-- Other buttons -->
+        <button class="button" id="button1">Clear</button>
+        <button class="button" id="button2">Highest Rap Servers</button>
+        <button class="button" id="button3">Lowest Rap Servers</button>
+        <button class="button" id="button4">To: BladeBall (13772394625)</button>
+    </div>
+
+    <script src="popup.js"></script>
+    <script>
+        document.getElementById('joinGameButton').addEventListener('click', function() {
+            window.location.href = 'https://www.roblox.com/games/13772394625';
+        });
+    </script>
+</body>
+</html>

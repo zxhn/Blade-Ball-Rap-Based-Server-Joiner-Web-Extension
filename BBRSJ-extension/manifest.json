@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Blade Ball Rap Based Server Joiner",
+  "version": "1.0",
+  "description": "BBRSJ is an extension based on roblox's game called blade ball, the extension uses the user roblox username to locate an server with either lowest rap values or highest rap values.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "assets/roblox.png"
+    
+  },
+  "permissions": [
+    "cookies",
+    "https://www.roblox.com/*",
+    "storage",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://www.roblox.com/*"
+  ],
+  "icons": {
+    "16": "assets/roblox.png",
+    "32": "assets/roblox.png",
+    "48": "assets/roblox.png",
+    "128": "assets/roblox.png"
+  }
+}
